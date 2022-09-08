@@ -6,9 +6,6 @@ metadata:
     app.kubernetes.io/name: pacman
 spec:
   path: "/"
-  tls:
-    termination: passthrough 
-    insecureEdgeTerminationPolicy: None
   to:
     kind: Service
     name: pacman
